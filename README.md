@@ -27,7 +27,9 @@ This writes a local sample.pcap containing three synthetic TCP SYN packets and o
 
     python3 pcap_summary.py sample.pcap
 
-The sample should show four packets and the example.test query.
+## Smoke check
+
+The generated sample was summarised as four packets, with three TCP packets, one UDP packet, and the example.test DNS query.
 
 ## Findings and limits
 
