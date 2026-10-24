@@ -39,6 +39,8 @@ The first version produces a quick inventory of the capture: total packet count,
 
 Traffic summaries can guide a manual investigation, but they are not proof of compromise. Correlate observations with host and application logs, and preserve the original capture when investigating.
 
-## Screenshots
+## Demo screenshot
 
-Add a redacted terminal screenshot using the generated sample or an authorised lab capture.
+![Synthetic PCAP analyzer output](screenshots/pcap-analyzer-demo.png)
+
+This output is from the generated sample and contains no captured network traffic.
