@@ -2,7 +2,7 @@
 
 [![Checks](https://github.com/Json8913/pcap-traffic-analyzer/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/Json8913/pcap-traffic-analyzer/actions/workflows/checks.yml)
 
-A Python command-line tool that reads a saved packet capture and summarises transport protocol counts, endpoint pairs, and DNS query names.
+A Python tool with desktop and command-line interfaces for summarising transport protocol counts, endpoint pairs, and DNS query names from saved packet captures.
 
 **Author:** Jason Santos Ritchie
 
@@ -16,6 +16,7 @@ This tool reads a file supplied by the user and does not capture live traffic or
 
 - Python 3.10 or newer
 - Scapy
+- Tkinter for the desktop interface
 
 Install dependencies:
 
