@@ -2,6 +2,8 @@
 
 A Python command-line tool that reads a saved packet capture and summarises transport protocol counts, endpoint pairs, and DNS query names.
 
+**Author:** Jason Santos Ritchie
+
 **Stage:** Initial prototype with configurable summary limits.
 
 ## Scope and safety
