@@ -19,6 +19,14 @@ Install dependencies:
 
     python3 -m pip install -r requirements.txt
 
+## Desktop interface
+
+Run the desktop app with:
+
+    python3 gui.py
+
+Choose a saved PCAP or PCAPNG file and set how many endpoint and DNS entries to show. The app uses the same offline summary tool and does not capture live traffic.
+
 ## Generate a safe sample
 
     python3 make_sample_pcap.py
