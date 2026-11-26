@@ -1,8 +1,8 @@
 # PCAP Traffic Analyzer
 
-A Python command-line tool that reads a saved packet capture and summarises protocol counts, endpoint pairs, and DNS query names.
+A Python command-line tool that reads a saved packet capture and summarises transport protocol counts, endpoint pairs, and DNS query names.
 
-**Stage:** Initial prototype.
+**Stage:** Initial prototype with configurable summary limits.
 
 ## Scope and safety
 
@@ -27,13 +27,17 @@ This writes a local sample.pcap containing three synthetic TCP SYN packets and o
 
     python3 pcap_summary.py sample.pcap
 
+Use `--top` to change the number of endpoint pairs and DNS names displayed:
+
+    python3 pcap_summary.py sample.pcap --top 5
+
 ## Smoke check
 
 The generated sample was summarised as four packets, with three TCP packets, one UDP packet, and the example.test DNS query.
 
 ## Findings and limits
 
-The first version produces a quick inventory of the capture: total packet count, protocol counts, frequent endpoint pairs, and DNS query names. It does not inspect payload contents or decide whether activity is malicious.
+The summary reports transport packet counts, endpoint pairs, and DNS query names as separate views. DNS packets remain part of their transport count. It does not inspect payload contents or decide whether activity is malicious.
 
 ## Mitigations and lessons
 
