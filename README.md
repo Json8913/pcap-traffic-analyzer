@@ -1,5 +1,7 @@
 # PCAP Traffic Analyzer
 
+[![Checks](https://github.com/Json8913/pcap-traffic-analyzer/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/Json8913/pcap-traffic-analyzer/actions/workflows/checks.yml)
+
 A Python command-line tool that reads a saved packet capture and summarises transport protocol counts, endpoint pairs, and DNS query names.
 
 **Author:** Jason Santos Ritchie
